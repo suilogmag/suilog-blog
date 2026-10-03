@@ -1411,3 +1411,47 @@ svg.taxo-ic { width:14px; height:13px; }
 .page .toc ol { list-style:none; padding-left:0; margin:0; counter-reset:sec; }
 .page .toc > ol > li { counter-increment:sec; font-size:13px; line-height:1.8; margin-bottom:8px; }
 .page .toc > ol > li::before { content:counter(sec) "\00a0\00a0|\00a0\00a0"; color:#444; font-weight:400; }
+
+/* ===== profile: old-site decorations ===== */
+.page h2 { font-size:18px; font-weight:700; line-height:1.4; color:#202020; background:rgba(211,57,106,.03); border-left:8px solid #d3396a; padding:13px 18px; margin:60px -8px 30px; }
+.page h3 { position:relative; font-size:16.5px; font-weight:700; color:#202020; padding:0 8px 9px; margin:44px 0 28px; background:none; border:0; }
+.page h3::before { content:""; position:absolute; left:0; bottom:0; width:100%; height:2px; background:repeating-linear-gradient(90deg,#d3396a 0%,#d3396a 29.3%,rgba(150,150,150,.2) 29.3%,rgba(150,150,150,.2) 100%); }
+.page h4 { display:flex; align-items:center; gap:6px; font-size:15.8px; font-weight:700; margin:40px 0 20px; color:#202020; }
+.page h4::before { content:""; width:18px; height:18px; background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2210%22%20fill%3D%22%23d3396a%22/%3E%3Crect%20x%3D%2210.8%22%20y%3D%226%22%20width%3D%222.4%22%20height%3D%228%22%20rx%3D%221.2%22%20fill%3D%22%23fff%22/%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2217.4%22%20r%3D%221.5%22%20fill%3D%22%23fff%22/%3E%3C/svg%3E") center/contain no-repeat; flex:none; }
+.page ul.pf-ul-box { list-style:disc; border:1px solid #d36e89; padding:22px 22px 22px 40px; margin:0 0 30px; }
+.page ul.pf-ul-box li { border-bottom:1px dashed rgba(199,199,199,.7); padding:0 0 11px; margin:4px 0 11px; font-size:15px; line-height:1.7; }
+.page ul.pf-ul-box li:last-child { border-bottom:0; margin-bottom:0; padding-bottom:0; }
+.page ul.pf-tri, .page ul.pf-check, .page ul.pf-bad, .page ul.pf-good, .page .pf-memo ul { list-style:none; padding:0 0 0 4px; margin:0 0 28px; }
+.page ul.pf-tri li, .page ul.pf-check li, .page ul.pf-bad li, .page ul.pf-good > li, .page .pf-memo li { position:relative; padding-left:24px; margin:5px 0; font-size:16px; line-height:1.7; }
+.page ul.pf-tri li::before, .page ul.pf-check li::before, .page ul.pf-bad li::before, .page ul.pf-good > li::before, .page .pf-memo li::before { content:""; position:absolute; left:0; top:4px; width:16px; height:16px; background-size:contain; background-repeat:no-repeat; background-position:center; }
+.page ul.pf-tri li::before { background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M8%204l12%208-12%208z%22%20fill%3D%22%23f4e03a%22/%3E%3C/svg%3E"); }
+.page ul.pf-check li::before, .page .pf-memo li::before { background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M4%2012.5l5%205L20%206.5%22%20fill%3D%22none%22%20stroke%3D%22%23d36e89%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3C/svg%3E"); }
+.page ul.pf-bad li::before { background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M5%205l14%2014M19%205L5%2019%22%20fill%3D%22none%22%20stroke%3D%22%23f36060%22%20stroke-width%3D%223%22%20stroke-linecap%3D%22round%22/%3E%3C/svg%3E"); }
+.page ul.pf-good > li::before { background-image:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%228%22%20fill%3D%22none%22%20stroke%3D%22%2386dd7b%22%20stroke-width%3D%223.5%22/%3E%3C/svg%3E"); }
+.page ul.pf-good li li { padding-left:0; margin:3px 0; font-size:15px; }
+.page ul.pf-good li li::before { content:none; }
+.page ul.pf-good ul { list-style:disc; padding-left:20px; margin:6px 0 0; }
+.page .pf-memo ul ul { margin:2px 0 4px; padding-left:0; }
+.page .pf-memo ul ul li::before { content:none; }
+.page .pf-memo ul ul li { padding-left:16px; }
+.page .pf-memo ul ul li::after { content:""; position:absolute; left:2px; top:12px; width:5px; height:5px; border-radius:50%; background:#aaa; }
+.page .pf-mark { background:linear-gradient(rgba(0,0,0,0) 64%, #ffddbc 0); }
+.page .pf-mark a { color:var(--link); }
+.page .pf-memo { position:relative; border:1.5px solid #84878a; padding:30px 20px 12px; margin:38px 0 30px; }
+.page .pf-memo-ic { position:absolute; left:9px; top:-19px; width:37px; height:37px; border-radius:50%; background:#84878a; border:1.5px solid #fdfdfd; color:#fff; display:flex; align-items:center; justify-content:center; font-size:16px; }
+.page .pf-memo-ic svg { width:16px; height:16px; }
+.page .pf-sns2 { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin:24px 0 0; }
+.page .pf-sns2 a { display:flex; flex-direction:column; align-items:center; justify-content:center; border:1px solid #eee; padding:16px 6px; font-size:14px; color:#202020 !important; text-decoration:none !important; background:#fff; line-height:1.4; }
+.page .pf-sns2 a i, .page .pf-sns2 a svg { font-size:28px; height:28px; width:auto; color:#d3396a; margin-bottom:12px; }
+.page .pf-sns2 a .ico { display:block; height:28px; width:28px; background-color:#d3396a; margin-bottom:12px; }
+.page .pf-sns2 a .ico-room { width:46px; } .page .pf-sns2 a .ico-radio { width:40px; }
+.page .toc { border:0; border-top:1.5px solid #d36e89; border-bottom:1.5px solid #d36e89; border-radius:0; padding:26px 8px 22px; margin:56px 0; font-size:15px; }
+.page .toc p { text-align:center; font-size:18px; font-weight:400; color:#202020; padding:0; margin:0 0 14px; }
+.page .toc p svg { width:18px; height:18px; margin-right:6px; vertical-align:-3px; }
+.page .toc ol { list-style:none; padding:0; margin:0; counter-reset:none; }
+.page .toc > ol > li { position:relative; font-size:16px; line-height:1.7; margin:4px 0; padding-left:19px; counter-increment:none; }
+.page .toc > ol > li::before { content:""; position:absolute; left:2px; top:10px; width:6px; height:6px; border-radius:50%; background:#d36e89; }
+.page .toc a { color:#202020 !important; text-decoration:none !important; }
+.page .pf-hist summary { background:rgba(199,199,199,.15); border-radius:0; text-align:left; color:#202020; padding:15px; font-weight:400; font-size:16px; position:relative; }
+.page .pf-hist summary::after { content:""; position:absolute; right:18px; top:50%; width:8px; height:8px; border-right:2px solid #888; border-bottom:2px solid #888; transform:translateY(-70%) rotate(45deg); }
+.page .pf-hist[open] summary::after { transform:translateY(-30%) rotate(-135deg); }
