@@ -1311,3 +1311,5 @@ article.post-v2 .toc > ol > li::before, article.post-v2 .toc li li::before { col
 .share-row a[data-share="hatena"].is-press { background-color:#3d9ad8; }
 .share-row a[data-share="line"].is-press { background-color:#06c755; }
 .share-row button.is-press { background-color:#555; }
+
+.rel-title { font-size:16px; margin:0 0 18px; padding-left:12px; border-left-width:3px; }
