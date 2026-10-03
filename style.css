@@ -1462,3 +1462,5 @@ svg.taxo-ic { width:14px; height:13px; }
 .page .toc ol { list-style:none; padding-left:0; margin:0; counter-reset:sec; }
 .page .toc > ol > li { counter-increment:sec; font-size:13px; line-height:1.8; margin:0 0 8px; padding-left:0; }
 .page .toc > ol > li::before { content:counter(sec) "\00a0\00a0|\00a0\00a0"; position:static; width:auto; height:auto; border-radius:0; background:none; color:#444; font-weight:400; }
+.pf-greet .said { font-size:13.5px; white-space:nowrap; padding:12px 14px; }
+@media (max-width:340px){ .pf-greet .said { font-size:12px; } }
