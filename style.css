@@ -1333,3 +1333,22 @@ svg.taxo-ic { width:14px; height:13px; }
 .concept-block { padding-bottom:36px; }
 .page h3 { font-size:15px; margin:22px 0 8px; }
 .page .pp-date { margin:0 0 4px; font-size:14px; }
+/* profile page */
+.pf-card { border:1px solid #e5d9dc; border-radius:12px; padding:16px 16px 18px; margin:0 0 14px; background:#fff; }
+.pf-card-t { font-weight:700; margin:0 0 8px !important; }
+.pf-card p { font-size:14px; margin:0 0 12px; }
+.pf-card-btn { display:block; text-align:center; background:#b87f8c; color:#fff !important; border-radius:999px; padding:10px; font-size:14px; text-decoration:none !important; }
+.pf-sns { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:16px; }
+.pf-sns a { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:6px; border:1px solid #e5d9dc; border-radius:10px; padding:12px 4px; font-size:11px; line-height:1.3; text-align:center; color:#333 !important; text-decoration:none !important; background:#fff; }
+.pf-sns a svg, .pf-sns a .ico { height:22px; width:auto; }
+.pf-sns a .ico { display:inline-block; width:22px; }
+.pf-sns a .ico-room { width:40px; } .pf-sns a .ico-radio { width:30px; }
+.pf-hist { margin:12px 0 28px; border:1px solid #e5d9dc; border-radius:12px; padding:0 16px; }
+.pf-hist summary { cursor:pointer; padding:14px 0; font-weight:700; font-size:14px; }
+.pf-step { border-top:1px solid #eee; padding:16px 0 4px; }
+.pf-step p { font-size:14px; margin:0 0 12px; }
+.pf-step .pf-step-y { color:#b87f8c; font-weight:700; font-size:12px; margin:0 0 2px; }
+.pf-step .pf-step-t { font-weight:700; font-size:15px; margin:0 0 10px; }
+.pf-bubble { background:#faf1f1; border-radius:10px; padding:10px 12px; margin:0 0 12px; }
+.pf-bubble .pf-bn { display:block; font-size:11px; color:#b87f8c; font-weight:700; margin-bottom:2px; }
+.pf-bubble p { margin:0; }
