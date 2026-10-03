@@ -1313,3 +1313,5 @@ article.post-v2 .toc > ol > li::before, article.post-v2 .toc li li::before { col
 .share-row button.is-press { background-color:#555; }
 
 .rel-title { font-size:16px; margin:0 0 18px; padding-left:12px; border-left-width:3px; }
+
+.rel-title { font-size:14px; margin:0 0 16px; padding-left:10px; border-left-width:3px; }
