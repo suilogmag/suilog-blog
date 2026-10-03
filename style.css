@@ -6,7 +6,7 @@
   --text: #1c1c1c;
   --sub: #7a716c;
   --accent: #ef8893;
-  --accent-text: #b8445a;
+  --accent-text: #c4566c;
   --accent-ink: #3a2a28;
   --accent-soft: #fdeef2;
   --link: #2f5ea3;
@@ -1356,7 +1356,7 @@ svg.taxo-ic { width:14px; height:13px; }
 .pf-bubble p { margin:0; }
 /* profile history: borderless vertical steps */
 .pf-hist { border:0; border-radius:0; padding:0; margin:12px 0 28px; }
-.pf-hist summary { display:block; text-align:center; background:#fff5f7; border-radius:999px; padding:12px 16px; margin:0 0 8px; color:#a03a50; list-style:none; }
+.pf-hist summary { display:block; text-align:center; background:#fff5f7; border-radius:999px; padding:12px 16px; margin:0 0 8px; color:#b0485e; list-style:none; }
 .pf-hist summary::-webkit-details-marker { display:none; }
 .hx { position:relative; text-align:center; padding:30px 0 6px; border-top:1px dashed #ccc; margin-top:22px; }
 .hx:first-of-type { margin-top:12px; }
@@ -1379,7 +1379,7 @@ svg.taxo-ic { width:14px; height:13px; }
 .page .hx p.hx-label { font-size:13px; }
 /* profile restructure */
 .pf-tags { list-style:none; padding:0 !important; margin:0 0 16px; display:flex; flex-wrap:wrap; gap:8px; }
-.pf-tags li { background:#fff5f7; color:#a03a50; border-radius:999px; padding:5px 12px; font-size:13px; margin:0; }
+.pf-tags li { background:#fff5f7; color:#b0485e; border-radius:999px; padding:5px 12px; font-size:13px; margin:0; }
 .pf-theme { border:1px solid #f2e4e8; border-radius:12px; padding:14px 16px; margin:0 0 12px; background:#fff; }
 .pf-theme p { margin:0 0 8px; font-size:14px; }
 .pf-theme .pf-theme-t { font-weight:700; font-size:15px; }
