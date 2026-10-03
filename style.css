@@ -1593,3 +1593,8 @@ article.post .body p { margin-bottom:30px; }
 .page h2, article.post.post-v2 .body h2, article.post .body h2 { border-top:0; border-bottom:0; border-left:5px solid #ef8893; padding:6px 12px; background:none; margin-left:0; margin-right:0; }
 
 .profile-summary-buttons a { white-space:nowrap; padding-left:6px; padding-right:6px; font-size:14px; }
+
+/* 白文字に戻す: プロフィールボタン / サムネ右上のタグ */
+.profile-summary-buttons a, .post-card .tag { color:#fff !important; }
+/* SNSアイコンの色をそろえる（右列のnote・ラジオ・ROOMも濃い色に） */
+.page .pf-sns2 a .ico { background-color:var(--accent-text); }
