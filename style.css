@@ -15,7 +15,7 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; overflow-anchor: none; }
+html { overflow-anchor: none; }
 
 body {
   margin: 0;
@@ -1315,3 +1315,5 @@ article.post-v2 .toc > ol > li::before, article.post-v2 .toc li li::before { col
 .rel-title { font-size:16px; margin:0 0 18px; padding-left:12px; border-left-width:3px; }
 
 .rel-title { font-size:14px; margin:0 0 16px; padding-left:10px; border-left-width:3px; }
+
+.rel-title { font-size:15px; margin:0 0 17px; padding-left:11px; border-left-width:3px; }

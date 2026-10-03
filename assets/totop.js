@@ -21,3 +21,13 @@
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 })();
+/* 目次などのページ内リンクだけ、なめらかにスクロール（再読み込み時の位置復元を邪魔しないため） */
+document.addEventListener("click", function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="#"]');
+  if (!a) return;
+  var id = a.getAttribute("href").slice(1);
+  var t = id && document.getElementById(id);
+  if (!t) return;
+  e.preventDefault();
+  t.scrollIntoView({ behavior: "smooth", block: "start" });
+});
