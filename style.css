@@ -1464,3 +1464,11 @@ svg.taxo-ic { width:14px; height:13px; }
 .page .toc > ol > li::before { content:counter(sec) "\00a0\00a0|\00a0\00a0"; position:static; width:auto; height:auto; border-radius:0; background:none; color:#444; font-weight:400; }
 .pf-greet .said { font-size:13.5px; white-space:nowrap; padding:12px 14px; }
 @media (max-width:340px){ .pf-greet .said { font-size:12px; } }
+
+/* profile: header image + theme icons */
+.pf-h1-img{border:none;background:none;padding:0;margin:0 0 8px;text-align:center;}
+.pf-h1-img::before,.pf-h1-img::after{display:none;}
+.pf-h1-img img{max-width:100%;height:auto;}
+.page .pf-theme .pf-theme-t{display:flex;align-items:center;gap:8px;}
+.pf-theme .pf-ti{width:24px;height:24px;flex:none;color:#d98ca0;}
+.pf-h1-img img.block-title-img{max-height:60px;margin:0 auto 6px;}
