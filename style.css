@@ -1598,3 +1598,6 @@ article.post .body p { margin-bottom:30px; }
 .profile-summary-buttons a, .post-card .tag { color:#fff !important; }
 /* SNSアイコンの色をそろえる（右列のnote・ラジオ・ROOMも濃い色に） */
 .page .pf-sns2 a .ico { background-color:var(--accent-text); }
+
+/* 白文字を読みやすく: SNSアイコンと同じ濃いピンクを背景に */
+.profile-summary-buttons a, .post-card .tag { background:var(--accent-text) !important; color:#fff !important; }
