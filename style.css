@@ -1384,3 +1384,17 @@ svg.taxo-ic { width:14px; height:13px; }
 .pf-theme .pf-theme-l { display:flex; flex-wrap:wrap; gap:8px; margin:6px 0 0; }
 .pf-theme .pf-theme-l a { font-size:12px; background:#f1f1f1; color:#444 !important; border-radius:2px; padding:4px 8px; text-decoration:none !important; }
 .page .toc { margin:20px 0 8px; }
+/* profile text size = article body size */
+.page p, .page li { font-size:16px; }
+.page p { margin:0 0 22px; }
+.page li { margin-bottom:8px; }
+.page h2 { font-size:18px; margin:44px 0 18px; }
+.page h3 { font-size:16px; }
+.page .pf-tags li { font-size:13px; margin:0; }
+.page .pf-theme p { font-size:15px; margin:0 0 8px; }
+.page .pf-theme .pf-theme-t { font-size:16px; }
+.page .pf-theme .pf-theme-l a { font-size:12px; }
+.page .pf-card p { font-size:15px; margin:0 0 12px; }
+.page .hx-body p { font-size:16px; }
+.page .pf-sns a { font-size:11px; }
+.page .pp-date { font-size:14px; }
