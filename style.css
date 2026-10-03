@@ -1610,3 +1610,4 @@ article.post .body p { margin-bottom:30px; }
 .pf-illust .pf-illust-img.pf-illust-img3 { background-image:url(assets/sns-illust.webp); width:74%; height:94%; }
 .page ul.pf-bad li { font-size:14px; line-height:1.7; padding-left:22px; }
 .page ul.pf-bad li::before { top:3px; width:15px; height:15px; }
+.page ul.pf-bad li { font-size:15px; }
