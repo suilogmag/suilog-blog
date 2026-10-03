@@ -1484,3 +1484,7 @@ svg.taxo-ic { width:14px; height:13px; }
 .page p { margin:0 0 30px; }
 article.post .body p { margin-bottom:30px; }
 .profile-summary-sns a, .feedback-box a { color:#444; }
+
+/* v39: concept text — keep the longest line on one line, scale with screen width */
+.concept-block { padding-left:16px; padding-right:16px; }
+.concept-body p { font-size:min(15px, calc((100vw - 76px) / 24.2)); }
