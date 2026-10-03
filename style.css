@@ -1369,3 +1369,6 @@ svg.taxo-ic { width:14px; height:13px; }
 .hx-title { font-size:25px; line-height:1.55; }
 .hx-num { font-size:40px; }
 .hx-label { font-size:16px; }
+.page .hx p.hx-title { font-size:25px; line-height:1.55; }
+.page .hx p.hx-num { font-size:40px; line-height:1.1; margin:0 0 14px; }
+.page .hx p.hx-label { font-size:16px; margin:0; }
