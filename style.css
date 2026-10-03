@@ -1469,3 +1469,4 @@ svg.taxo-ic { width:14px; height:13px; }
 .pf-illust{margin:0 0 28px;background:#f4f5f6;padding:8px;}
 .pf-illust img{display:block;width:100%;height:auto;margin:0 auto;}
 .pf-illust{padding:0;}.pf-illust img{mix-blend-mode:multiply;}
+.pf-illust{aspect-ratio:1.9/1;display:flex;align-items:center;justify-content:center;}.pf-illust img{width:58%;max-height:88%;object-fit:contain;}
