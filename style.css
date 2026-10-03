@@ -1329,3 +1329,5 @@ svg.taxo-ic { width:20px; height:18px; }
 .taxo-ic { font-size:13px; width:14px; margin-right:0; }
 svg.taxo-ic { width:14px; height:13px; }
 .taxo-row a { font-size:12px; padding:4px 8px; border-radius:2px; }
+.concept-body p:last-child { margin-bottom:0; }
+.concept-block { padding-bottom:36px; }
