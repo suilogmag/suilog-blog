@@ -1605,3 +1605,5 @@ article.post .body p { margin-bottom:30px; }
 /* トップのプロフィール内SNSボタン: 隣のボタンと同じ濃いピンクの枠に */
 .profile-summary-sns a { border:1.5px solid var(--accent-text); }
 .profile-summary-sns a:hover, .profile-summary-sns a.solid:hover { background:var(--accent-text); color:#fff; }
+
+.pf-illust .pf-illust-img.pf-illust-img2 { background-image:url(assets/blog-illust.webp); width:74%; height:94%; }
