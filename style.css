@@ -1591,3 +1591,5 @@ article.post .body p { margin-bottom:30px; }
 
 /* h2: 左の線のみ（デザイン3・最終） */
 .page h2, article.post.post-v2 .body h2, article.post .body h2 { border-top:0; border-bottom:0; border-left:5px solid #f39f89; padding:6px 12px; background:none; margin-left:0; margin-right:0; }
+
+.profile-summary-buttons a { white-space:nowrap; padding-left:6px; padding-right:6px; font-size:14px; }
