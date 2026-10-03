@@ -1401,3 +1401,6 @@ svg.taxo-ic { width:14px; height:13px; }
 .page .toc { border:1px solid #cfcfcf; border-radius:0; padding:26px 24px 22px; font-size:16px; }
 .page .toc a, .page .toc a:hover, .page .toc a:visited { color:#222 !important; text-decoration:none !important; border:0; font-weight:400; }
 .page .toc > ol > li { font-size:17px; line-height:1.7; margin-bottom:14px; }
+.page .toc p { font-size:21px; font-weight:500; color:#222; padding-bottom:16px; margin:0 0 18px; }
+.page .toc p svg { width:22px; height:22px; margin-right:10px; vertical-align:-3px; }
+.page .toc ol { margin:0; padding-left:22px; }
