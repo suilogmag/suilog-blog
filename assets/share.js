@@ -1,4 +1,5 @@
 (function(){
+  document.addEventListener('touchstart',function(){},true);
   var url=location.href.split('#')[0], t=encodeURIComponent(document.title.split('｜')[0]), u=encodeURIComponent(url);
   var map={
     fb:'https://www.facebook.com/sharer/sharer.php?u='+u,
@@ -16,5 +17,14 @@
         else{var ta=document.createElement('textarea');ta.value=url;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');}catch(e){}ta.remove();done();}
       });
     }
+  });
+})();
+(function(){
+  var els=document.querySelectorAll('.share-row a,.share-row button');
+  function on(e){e.currentTarget.classList.add('is-press');}
+  function off(e){var t=e.currentTarget;setTimeout(function(){t.classList.remove('is-press');},350);}
+  els.forEach(function(el){
+    ['touchstart','mousedown'].forEach(function(n){el.addEventListener(n,on,{passive:true});});
+    ['touchend','touchcancel','mouseup','mouseleave'].forEach(function(n){el.addEventListener(n,off,{passive:true});});
   });
 })();

@@ -1302,3 +1302,12 @@ article.post-v2 .toc > ol > li::before, article.post-v2 .toc li li::before { col
 
 .page a.form-btn { display:block; text-align:center; background:var(--accent); color:#fff; text-decoration:none; border-radius:999px; padding:14px 20px; font-size:15px; margin:8px 0 0; }
 .page a.form-btn:hover { opacity:.88; }
+
+/* share: pressed color (also for iOS where :active is unreliable) */
+.share-row a, .share-row button { -webkit-tap-highlight-color:transparent; }
+.share-row .is-press { color:#fff !important; }
+.share-row a[data-share="fb"].is-press { background-color:#3b5998; }
+.share-row a[data-share="x"].is-press { background-color:#111; }
+.share-row a[data-share="hatena"].is-press { background-color:#3d9ad8; }
+.share-row a[data-share="line"].is-press { background-color:#06c755; }
+.share-row button.is-press { background-color:#555; }
