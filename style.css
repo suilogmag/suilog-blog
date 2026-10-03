@@ -1601,3 +1601,7 @@ article.post .body p { margin-bottom:30px; }
 
 /* 白文字を読みやすく: SNSアイコンと同じ濃いピンクを背景に */
 .profile-summary-buttons a, .post-card .tag { background:var(--accent-text) !important; color:#fff !important; }
+
+/* トップのプロフィール内SNSボタン: 隣のボタンと同じ濃いピンクの枠に */
+.profile-summary-sns a { border:1.5px solid var(--accent-text); }
+.profile-summary-sns a:hover, .profile-summary-sns a.solid:hover { background:var(--accent-text); color:#fff; }
