@@ -1479,3 +1479,8 @@ svg.taxo-ic { width:14px; height:13px; }
 .page .pf-me-box ul{margin:0;padding:0 0 0 22px;list-style:disc;}
 .page .pf-me-box li{margin:0 0 10px;padding:0;font-size:15.5px;line-height:1.6;}
 .page .pf-me-box li::before{display:none;content:none;}
+
+/* v36: paragraph spacing 30px, pink-outline button text -> dark gray */
+.page p { margin:0 0 30px; }
+article.post .body p { margin-bottom:30px; }
+.profile-summary-sns a, .feedback-box a { color:#444; }
