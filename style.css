@@ -1317,3 +1317,11 @@ article.post-v2 .toc > ol > li::before, article.post-v2 .toc li li::before { col
 .rel-title { font-size:14px; margin:0 0 16px; padding-left:10px; border-left-width:3px; }
 
 .rel-title { font-size:15px; margin:0 0 17px; padding-left:11px; border-left-width:3px; }
+
+.taxo-row { display:flex; flex-wrap:wrap; align-items:center; gap:10px 8px; }
+.taxo-ic { color:#555; font-size:18px; width:20px; height:auto; margin-right:2px; }
+svg.taxo-ic { width:20px; height:18px; }
+.taxo-row a { display:inline-block; font-size:15px; line-height:1.2; padding:8px 12px; text-decoration:none; }
+.taxo-cat { background:#555; color:#fff; border-radius:3px; }
+.taxo-tag { background:#f1f1f1; color:#444; border-radius:3px; }
+.rel-title { font-size:18px; margin:0 0 20px; padding-left:14px; border-left-width:4px; }
