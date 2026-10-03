@@ -1586,3 +1586,6 @@ article.post .body p { margin-bottom:30px; }
 
 /* h2: 上下の線（デザイン10） */
 .page h2, article.post.post-v2 .body h2, article.post .body h2 { border-left:0; border-top:2px solid #a56a76; border-bottom:2px solid #a56a76; padding:14px 8px; background:none; margin-left:0; margin-right:0; }
+
+/* h2: 左の線のみ（デザイン3・最終） */
+.page h2, article.post.post-v2 .body h2, article.post .body h2 { border-top:0; border-bottom:0; border-left:5px solid #a56a76; padding:6px 12px; background:none; margin-left:0; margin-right:0; }
