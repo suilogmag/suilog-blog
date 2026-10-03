@@ -1470,3 +1470,6 @@ svg.taxo-ic { width:14px; height:13px; }
 .pf-illust img{display:block;width:100%;height:auto;margin:0 auto;}
 .pf-illust{padding:0;}.pf-illust img{mix-blend-mode:multiply;}
 .pf-illust{aspect-ratio:1.9/1;display:flex;align-items:center;justify-content:center;}.pf-illust img{width:58%;max-height:88%;object-fit:contain;}
+
+.pf-illust{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none;}
+.pf-illust .pf-illust-img{width:58%;height:88%;background:url(assets/profile-illust.png) center/contain no-repeat;mix-blend-mode:multiply;}
