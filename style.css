@@ -1611,3 +1611,4 @@ article.post .body p { margin-bottom:30px; }
 .page ul.pf-bad li { font-size:14px; line-height:1.7; padding-left:22px; }
 .page ul.pf-bad li::before { top:3px; width:15px; height:15px; }
 .page ul.pf-bad li { font-size:15px; }
+.page ul.pf-bad li { font-size:14px; }
