@@ -1375,3 +1375,12 @@ svg.taxo-ic { width:14px; height:13px; }
 .page .hx p.hx-title { font-size:19px; }
 .page .hx p.hx-num { font-size:30px; }
 .page .hx p.hx-label { font-size:13px; }
+/* profile restructure */
+.pf-tags { list-style:none; padding:0 !important; margin:0 0 16px; display:flex; flex-wrap:wrap; gap:8px; }
+.pf-tags li { background:#f6eef0; color:#8a5663; border-radius:999px; padding:5px 12px; font-size:13px; margin:0; }
+.pf-theme { border:1px solid #e5d9dc; border-radius:12px; padding:14px 16px; margin:0 0 12px; background:#fff; }
+.pf-theme p { margin:0 0 8px; font-size:14px; }
+.pf-theme .pf-theme-t { font-weight:700; font-size:15px; }
+.pf-theme .pf-theme-l { display:flex; flex-wrap:wrap; gap:8px; margin:6px 0 0; }
+.pf-theme .pf-theme-l a { font-size:12px; background:#f1f1f1; color:#444 !important; border-radius:2px; padding:4px 8px; text-decoration:none !important; }
+.page .toc { margin:20px 0 8px; }
