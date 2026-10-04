@@ -1649,3 +1649,15 @@ article.post .body p { margin-bottom:30px; }
 @media (min-width:960px) {
   .profile-summary { background:linear-gradient(180deg,#fde9ef 0%,#fbdfe7 100%); }
 }
+
+/* PC: uniform header icons + larger logo */
+@media (min-width:960px) {
+  .hd-row .site-logo { width:320px; }
+  .pc-sns { gap:20px; align-items:center; }
+  .pc-sns a { display:flex; align-items:center; justify-content:center; height:18px; min-width:18px; font-size:16px; color:#444; }
+  .pc-sns a svg { width:auto; height:16px; }
+  .pc-sns .ico { height:16px; background-color:#444; }
+  .pc-sns .ico-line { width:17px; height:16px; }
+  .pc-sns .ico-radio { width:22px; height:16px; }
+  .pc-sns .ico-room { width:34px; height:11px; }
+}
