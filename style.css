@@ -1824,3 +1824,27 @@ article.post .body p { margin-bottom:30px; }
   .side-main > .sd-dup { display:none; }
   .page .pf-me-box { background-image:linear-gradient(#fdfdfd 1px,transparent 1px),linear-gradient(90deg,#fdfdfd 1px,transparent 1px); }
 }
+
+/* PC: bottom area (profile / keywords / new posts / category) under the 2 columns */
+@media (min-width:960px) {
+  .side-main > .sd-dup { display:block; }
+  .side-bottom > .wrap { max-width:1264px; padding:0 32px; }
+  .side-bottom .sd-search-dup { display:none; }
+  .side-bottom .profile-summary::before { display:none; }
+  .side-bottom .profile-summary { margin-top:70px; padding-top:70px; }
+  .side-bottom .block-title-wrap { margin-top:56px; }
+  .side-bottom .block-title-img { display:block; margin:0 auto 30px; max-height:56px; width:auto; }
+  .side-bottom .post-list { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:30px 28px; }
+  .side-bottom .post-list > .post-card:nth-child(n+7) { display:none; }
+  .side-bottom .category-grid { grid-template-columns:repeat(4,1fr); gap:14px; padding-bottom:40px; }
+  .side-bottom .tag-cloud { justify-content:center; }
+  .side-bottom .more-btn { max-width:380px; margin:36px auto 0; }
+  .sd-sticky .sd-search { margin:0 0 14px; }
+  .sd-sticky { top:76px; }
+}
+@media (min-width:960px) {
+  .side-bottom .profile-summary { display:block; padding-left:0; padding-right:0; margin-left:0; margin-right:0; }
+  .side-bottom .profile-summary > * { max-width:560px; margin-left:auto; margin-right:auto; }
+  .side-bottom .profile-summary-story { text-align:center; }
+  .side-bottom .profile-summary > .block-title-img { max-width:none; }
+}

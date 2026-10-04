@@ -17,21 +17,34 @@
   wrap.appendChild(aside);
 
   var h='';
-  h+='<form class="sd-search" action="'+pre+'index.html" method="get"><input type="text" name="q" placeholder="検索" aria-label="キーワード検索"><button type="submit" aria-label="検索"><i class="fa-solid fa-magnifying-glass"></i></button></form>';
+  var searchHtml='<form class="sd-search" action="'+pre+'index.html" method="get"><input type="text" name="q" placeholder="検索" aria-label="キーワード検索"><button type="submit" aria-label="検索"><i class="fa-solid fa-magnifying-glass"></i></button></form>';
   h+='<div class="sd-profile"><img class="sd-photo" src="'+pre+'assets/profile-photo.png" alt="スイ"><p class="sd-name">スイ</p><p class="sd-bio">毒親育ちの未婚シングルマザーが、ステップファミリーを経て、幸せになる話を綴っています。</p><a class="sd-btn" href="'+pre+'profile.html">詳しいプロフィールはこちら</a><div class="sd-sns">'+sns.map(function(c){var ex=c[2].indexOf("http")===0?' target="_blank" rel="noopener"':'';return '<a href="'+c[2]+'"'+ex+' aria-label="'+c[1]+'"><i class="'+c[0]+'"></i></a>';}).join("")+'</div></div>';
   h+='<div class="sd-box"><p class="sd-title">応援ありがとうございます！</p><a class="sd-pill" href="https://room.rakuten.co.jp/suilog_mag/" target="_blank" rel="noopener"><i class="ico ico-room"></i>楽天ROOM</a><a class="sd-pill" href="https://www.amazon.co.jp/hz/wishlist/ls/6S7SB8APK0S5?ref_=wl_share" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i>ほしいものリスト</a></div>';
   h+='<div class="sd-box" id="sd-pop"><p class="sd-title">人気記事</p><div class="sd-pop"></div></div>';
   h+='<div class="sd-box"><p class="sd-title">キーワード</p><div class="sd-tags">'+tags.map(function(t){return '<a href="'+pre+'tag/'+t[1]+'.html">'+esc(t[0])+'</a>';}).join("")+'</div></div>';
   h+='<div class="sd-box"><p class="sd-title">アーカイブ</p><select class="sd-arch" aria-label="月を選択"><option value="">月を選択</option><option value="'+pre+'archive/2026-05.html">2026年5月</option></select></div>';
   h+='<div class="sd-box" id="sd-cat"><p class="sd-title">カテゴリー</p><ul class="sd-cats">'+cats.map(function(c){return '<li><a href="'+pre+'category/'+c[1]+'.html"><i class="fa-solid fa-folder"></i>'+esc(c[0])+' <span data-cat="'+esc(c[0])+'"></span></a></li>';}).join("")+'</ul></div>';
-  h+='<div class="sd-sticky"><div class="sd-box" id="sd-toc" hidden><p class="sd-title">目次</p><ul class="sd-toc"></ul></div><a class="sd-top" href="#" id="sd-top"><i class="fa-solid fa-house"></i>トップへ戻る<i class="fa-solid fa-arrow-right-long"></i></a></div>';
+  h+='<div class="sd-sticky">'+searchHtml+'<div class="sd-box" id="sd-toc" hidden><p class="sd-title">目次</p><ul class="sd-toc"></ul></div><a class="sd-top" href="#" id="sd-top"><i class="fa-solid fa-house"></i>トップへ戻る<i class="fa-solid fa-arrow-right-long"></i></a></div>';
   aside.innerHTML=h;
 
-  // blocks after "関連記事" duplicate the sidebar on PC -> mark for hiding
+  // blocks after "関連記事" (profile / search / keywords / new posts / category):
+  // move into a full-width area under the 2 columns (search hidden on PC: sidebar has it)
   var kids=Array.prototype.slice.call(inner.children),ri=-1;
   kids.forEach(function(k,i){var t=k.querySelector&&k.querySelector(".rel-title");if(t&&t.textContent.indexOf("関連記事")>-1)ri=i;});
-  if(ri>-1)kids.slice(ri+1).forEach(function(k){k.classList.add("sd-dup");});
-
+  if(ri>-1){
+    var rest=kids.slice(ri+1);
+    if(rest.length){
+      var sb=document.createElement("div");sb.className="side-bottom";
+      var sw=document.createElement("div");sw.className="wrap";
+      rest.forEach(function(k){
+        var bt=k.querySelector&&k.querySelector(".block-title");
+        if(bt&&bt.textContent.indexOf("検索")>-1)k.classList.add("sd-search-dup");
+        sw.appendChild(k);
+      });
+      sb.appendChild(sw);
+      main.appendChild(sb);
+    }
+  }
 
   aside.querySelector(".sd-arch").addEventListener("change",function(){if(this.value)location.href=this.value;});
   aside.querySelector("#sd-top").addEventListener("click",function(e){e.preventDefault();window.scrollTo({top:0,behavior:"smooth"});});
