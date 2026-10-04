@@ -18,6 +18,7 @@
 
   var h='';
   var searchHtml='<form class="sd-search" action="'+pre+'index.html" method="get"><input type="text" name="q" placeholder="検索" aria-label="キーワード検索"><button type="submit" aria-label="検索"><i class="fa-solid fa-magnifying-glass"></i></button></form>';
+  h+=searchHtml;
   h+='<div class="sd-profile"><img class="sd-photo" src="'+pre+'assets/profile-photo.png" alt="スイ"><p class="sd-name">スイ</p><p class="sd-bio">毒親育ちの未婚シングルマザーが、ステップファミリーを経て、幸せになる話を綴っています。</p><a class="sd-btn" href="'+pre+'profile.html">詳しいプロフィールはこちら</a><div class="sd-sns">'+sns.map(function(c){var ex=c[2].indexOf("http")===0?' target="_blank" rel="noopener"':'';return '<a href="'+c[2]+'"'+ex+' aria-label="'+c[1]+'"><i class="'+c[0]+'"></i></a>';}).join("")+'</div></div>';
   h+='<div class="sd-box"><p class="sd-title">応援ありがとうございます！</p><a class="sd-pill" href="https://room.rakuten.co.jp/suilog_mag/" target="_blank" rel="noopener"><i class="ico ico-room"></i>楽天ROOM</a><a class="sd-pill" href="https://www.amazon.co.jp/hz/wishlist/ls/6S7SB8APK0S5?ref_=wl_share" target="_blank" rel="noopener"><i class="fa-brands fa-amazon"></i>ほしいものリスト</a></div>';
   h+='<div class="sd-box" id="sd-pop"><p class="sd-title">人気記事</p><div class="sd-pop"></div></div>';
