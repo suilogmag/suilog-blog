@@ -34,4 +34,9 @@
     ic.innerHTML=[["fa-brands fa-x-twitter","X","https://x.com/suilog_mag"],["fa-brands fa-instagram","Instagram","https://www.instagram.com/suilog_3tm/"],["fa-brands fa-tiktok","TikTok","https://www.tiktok.com/@suilog_mag"],["ico ico-room","ROOM","https://room.rakuten.co.jp/suilog_mag/"],["ico ico-line","公式LINE","https://lin.ee/9OKmAWb"],["fa-brands fa-pinterest-p","Pinterest","https://pin.it/4FHcxBgEQ"],["fa-brands fa-youtube","YouTube","https://youtube.com/@suilog_mag"],["fa-brands fa-amazon","Amazon","https://www.amazon.co.jp/hz/wishlist/ls/6S7SB8APK0S5?ref_=wl_share"],["ico ico-radio","ラジオ","https://stand.fm/channels/68070aba2169b1fe6124266f"]].map(function(c){return '<a href="'+c[2]+'" target="_blank" rel="noopener" aria-label="'+c[1]+'"><i class="'+c[0]+'"></i></a>';}).join("");
     var w=document.querySelector(".site-header .wrap");if(w)w.insertBefore(ic,w.firstChild);
   })();
+  (function(){
+    var hd=document.querySelector("header.site-header");if(!hd)return;
+    function f(){hd.classList.toggle("is-scrolled",window.scrollY>60);}
+    window.addEventListener("scroll",f,{passive:true});f();
+  })();
 })();

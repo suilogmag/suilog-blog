@@ -1661,3 +1661,18 @@ article.post .body p { margin-bottom:30px; }
   .pc-sns .ico-radio { width:22px; height:16px; }
   .pc-sns .ico-room { width:34px; height:11px; }
 }
+
+/* PC: header shrinks when scrolled; header not gray; darker link text */
+@media (min-width:960px) {
+  header.site-header { background:#fff; border-bottom:1px solid #f3e6ea; transition:box-shadow .2s; }
+  header.site-header .pc-sns { overflow:hidden; max-height:40px; transition:max-height .2s, opacity .2s, padding .2s; }
+  header.site-header .hd-row { transition:padding .2s; }
+  header.site-header .site-logo { transition:width .2s; }
+  header.site-header.is-scrolled { box-shadow:0 2px 10px rgba(0,0,0,.06); }
+  header.site-header.is-scrolled .pc-sns { max-height:0; opacity:0; padding-top:0; }
+  header.site-header.is-scrolled .hd-row { padding:8px 0; }
+  header.site-header.is-scrolled .hd-row .site-logo { width:190px; }
+  .pc-nav a small { color:#6b625e; }
+  .tag-cloud a { color:#4a423f; border-color:#ecd5db; }
+  .post-card .date, .post-meta, .post-date { color:#6b625e; }
+}
