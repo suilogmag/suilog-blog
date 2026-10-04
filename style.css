@@ -1866,3 +1866,13 @@ article.post .body p { margin-bottom:30px; }
   .side-main .category-grid { grid-template-columns:repeat(3,1fr); gap:12px; padding-bottom:20px; }
   .sd-sticky { top:76px; }
 }
+
+/* profile: mobile overflow fix + 媒体 list (text starts at the circle) */
+.pf-greet .said { white-space:normal; min-width:0; }
+.pf-greet, .pf-greet .bubble { max-width:100%; }
+.page ul.pf-good { padding:0; margin:0 0 10px; }
+.page ul.pf-good > li { padding-left:0; margin:0; line-height:1.6; }
+.page ul.pf-good > li::before { position:static; display:inline-block; vertical-align:-3px; margin-right:6px; }
+.page ul.pf-good ul { list-style:disc inside; padding:0; margin:4px 0 0; }
+.page ul.pf-good li li { margin:1px 0; line-height:1.55; }
+.page ul.pf-good > li > p { margin:4px 0 0 !important; line-height:1.6; }
