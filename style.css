@@ -1735,3 +1735,5 @@ article.post .body p { margin-bottom:30px; }
   .band-pop { background:linear-gradient(180deg,#f6f3f4 0%,#f0ebed 100%); }
   .band-pop .post-card { background:transparent; }
 }
+.page a.form-btn { background:var(--accent-text); color:#fff; }
+.page a.form-btn:hover { color:#fff; }
