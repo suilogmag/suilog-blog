@@ -1695,3 +1695,16 @@ article.post .body p { margin-bottom:30px; }
   .profile-summary { background:#fff; padding-bottom:90px; }
   .profile-summary::after { display:none; }
 }
+
+/* PC: tighter vertical spacing + popular tone */
+@media (min-width:960px) {
+  .concept-block::before, .concept-block::after, .band-pop::before, .profile-summary::before { height:56px; }
+  .concept-block { margin-top:56px; margin-bottom:40px; padding:84px 0 70px; }
+  .concept-block .block-title-img { margin-bottom:30px; }
+  .band-pop { padding:84px 0 64px; background:linear-gradient(180deg,#fbf8f9 0%,#f7f1f3 100%); }
+  .profile-summary::before { background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M0,0 H1440 V38 C1230,100 1010,100 770,52 C520,2 250,6 0,62 Z' fill='%23f7f1f3'/%3E%3C/svg%3E"); }
+  .profile-summary { padding-top:96px; padding-bottom:56px; }
+  .profile-summary > .block-title-img { margin-bottom:28px; }
+  body.home .block-title-wrap { margin-top:44px; }
+  .category-grid { padding-bottom:40px; }
+}
