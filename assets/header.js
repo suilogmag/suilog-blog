@@ -31,7 +31,7 @@
     nav.innerHTML=menu.map(function(m){return '<a href="'+m[2]+'"'+(m[2].indexOf("http")===0?' target="_blank" rel="noopener"':'')+'><b>'+m[0]+'</b><small>'+m[1]+'</small></a>';}).join("")+'<a class="pc-search" href="'+pre+'index.html#search-block" aria-label="検索"><i class="fa-solid fa-magnifying-glass"></i></a>';
     row.appendChild(nav);
     var ic=document.createElement("div");ic.className="pc-sns";
-    ic.innerHTML=sns.filter(function(c){return !/suilog_3rd|sui_gamelog/.test(c[2]);}).map(function(c){return '<a href="'+c[2]+'" target="_blank" rel="noopener" aria-label="'+c[1]+'"><i class="'+c[0]+'"></i></a>';}).join("");
+    ic.innerHTML=[["fa-brands fa-x-twitter","X","https://x.com/suilog_mag"],["fa-brands fa-instagram","Instagram","https://www.instagram.com/suilog_3tm/"],["fa-brands fa-tiktok","TikTok","https://www.tiktok.com/@suilog_mag"],["ico ico-room","ROOM","https://room.rakuten.co.jp/suilog_mag/"],["ico ico-line","公式LINE","https://lin.ee/9OKmAWb"],["fa-brands fa-pinterest-p","Pinterest","https://pin.it/4FHcxBgEQ"],["fa-brands fa-youtube","YouTube","https://youtube.com/@suilog_mag"],["fa-brands fa-amazon","Amazon","https://www.amazon.co.jp/hz/wishlist/ls/6S7SB8APK0S5?ref_=wl_share"],["ico ico-radio","ラジオ","https://stand.fm/channels/68070aba2169b1fe6124266f"]].map(function(c){return '<a href="'+c[2]+'" target="_blank" rel="noopener" aria-label="'+c[1]+'"><i class="'+c[0]+'"></i></a>';}).join("");
     var w=document.querySelector(".site-header .wrap");if(w)w.insertBefore(ic,w.firstChild);
   })();
 })();
