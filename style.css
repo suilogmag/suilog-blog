@@ -1820,3 +1820,7 @@ article.post .body p { margin-bottom:30px; }
   #sd-toc.compact { margin-bottom:12px; }
   .sd-top { padding:8px 14px; }
 }
+@media (min-width:960px) {
+  .side-main > .sd-dup { display:none; }
+  .page .pf-me-box { background-image:linear-gradient(#fdfdfd 1px,transparent 1px),linear-gradient(90deg,#fdfdfd 1px,transparent 1px); }
+}

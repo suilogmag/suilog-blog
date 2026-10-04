@@ -27,6 +27,12 @@
   h+='<div class="sd-sticky"><div class="sd-box" id="sd-toc" hidden><p class="sd-title">目次</p><ul class="sd-toc"></ul></div><a class="sd-top" href="#" id="sd-top"><i class="fa-solid fa-house"></i>トップへ戻る<i class="fa-solid fa-arrow-right-long"></i></a></div>';
   aside.innerHTML=h;
 
+  // blocks after "関連記事" duplicate the sidebar on PC -> mark for hiding
+  var kids=Array.prototype.slice.call(inner.children),ri=-1;
+  kids.forEach(function(k,i){var t=k.querySelector&&k.querySelector(".rel-title");if(t&&t.textContent.indexOf("関連記事")>-1)ri=i;});
+  if(ri>-1)kids.slice(ri+1).forEach(function(k){k.classList.add("sd-dup");});
+
+
   aside.querySelector(".sd-arch").addEventListener("change",function(){if(this.value)location.href=this.value;});
   aside.querySelector("#sd-top").addEventListener("click",function(e){e.preventDefault();window.scrollTo({top:0,behavior:"smooth"});});
 
