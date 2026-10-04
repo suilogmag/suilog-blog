@@ -31,7 +31,7 @@
     nav.innerHTML=menu.map(function(m){return '<a href="'+m[2]+'"'+(m[2].indexOf("http")===0?' target="_blank" rel="noopener"':'')+'><b>'+m[0]+'</b><small>'+m[1]+'</small></a>';}).join("")+'<a class="pc-search" href="'+pre+'index.html#search-block" aria-label="検索"><i class="fa-solid fa-magnifying-glass"></i></a>';
     row.appendChild(nav);
     var ic=document.createElement("div");ic.className="pc-sns";
-    ic.innerHTML=sns.map(function(c){return '<a href="'+c[2]+'" target="_blank" rel="noopener" aria-label="'+c[1]+'"><i class="'+c[0]+'"></i></a>';}).join("");
+    ic.innerHTML=sns.filter(function(c){return !/suilog_3rd|sui_gamelog/.test(c[2]);}).map(function(c){return '<a href="'+c[2]+'" target="_blank" rel="noopener" aria-label="'+c[1]+'"><i class="'+c[0]+'"></i></a>';}).join("");
     var w=document.querySelector(".site-header .wrap");if(w)w.insertBefore(ic,w.firstChild);
   })();
 })();
