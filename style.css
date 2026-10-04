@@ -1808,3 +1808,8 @@ article.post .body p { margin-bottom:30px; }
   .tag-cloud a, .sd-tags a { color:#2b2523; }
   h1, h2, h3, h4, .sd-title, .post-card h2 { font-weight:700; }
 }
+@media (min-width:960px) {
+  main[data-side] > .wrap.has-side { align-items:stretch; }
+  .side-col { align-self:stretch; }
+  .sd-sticky { position:sticky; top:84px; }
+}
