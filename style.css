@@ -1878,3 +1878,4 @@ article.post .body p { margin-bottom:30px; }
 .page ul.pf-good > li > p { margin:6px 0 0 !important; line-height:1.7; }
 .page ul.pf-good > li::before { margin-left:-2px; margin-right:8px; }
 .page ul.pf-good + .pf-sns2 { margin-top:48px; }
+.page .hx p.hx-label, .page .hx p.hx-num { color:var(--accent-text) !important; }
