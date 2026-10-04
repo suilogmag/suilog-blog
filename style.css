@@ -1876,3 +1876,4 @@ article.post .body p { margin-bottom:30px; }
 .page ul.pf-good ul { list-style:disc inside; padding:0; margin:6px 0 0; }
 .page ul.pf-good li li { margin:3px 0; line-height:1.7; }
 .page ul.pf-good > li > p { margin:6px 0 0 !important; line-height:1.7; }
+.page ul.pf-good > li::before { margin-left:-2px; margin-right:8px; }
