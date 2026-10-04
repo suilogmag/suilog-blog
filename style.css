@@ -1691,3 +1691,7 @@ article.post .body p { margin-bottom:30px; }
   .band-pop { background:#fbf7f8; }
   .profile-summary { background:linear-gradient(180deg,#fffafb 0%,#fdeff3 100%); padding-bottom:150px; }
 }
+@media (min-width:960px) {
+  .profile-summary { background:#fff; padding-bottom:90px; }
+  .profile-summary::after { display:none; }
+}
