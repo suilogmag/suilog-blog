@@ -1797,3 +1797,14 @@ article.post .body p { margin-bottom:30px; }
   .sd-sns { gap:6px; }
   .sd-sns a { width:27px; height:27px; font-size:12px; }
 }
+
+/* PC only: text looks thin on Windows (Yu Gothic) -> darker + medium weight */
+@media (min-width:960px) {
+  :root { --text:#0f0f0f; --sub:#4a423f; }
+  body { color:#0f0f0f; font-weight:500; }
+  article.post .body p, .page p, .page li, .concept-body p, .sd-bio, .sd-toc a, .sd-cats a, .sd-pop .tt { color:#0f0f0f; }
+  .pc-nav a { color:#0f0f0f; font-weight:500; }
+  .pc-nav a small, .post-card .meta, .post-card .meta span, .back-link { color:#4a423f; }
+  .tag-cloud a, .sd-tags a { color:#2b2523; }
+  h1, h2, h3, h4, .sd-title, .post-card h2 { font-weight:700; }
+}
