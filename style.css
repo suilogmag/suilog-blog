@@ -1848,3 +1848,21 @@ article.post .body p { margin-bottom:30px; }
   .side-bottom .profile-summary-story { text-align:center; }
   .side-bottom .profile-summary > .block-title-img { max-width:none; }
 }
+
+/* PC: profile / keywords / new posts / category stay inside the left column */
+@media (min-width:960px) {
+  .side-main .sd-search-dup { display:none; }
+  .side-main .profile-summary, .side-main .profile-summary.block { display:block; position:static; margin:56px 0 0; max-width:none; padding:0; background:transparent; }
+  .side-main .profile-summary::before, .side-main .profile-summary::after { display:none; }
+  .side-main .profile-summary > * { max-width:none; }
+  .side-main .profile-summary-story { text-align:left; }
+  .side-main .profile-summary-buttons { justify-content:center; }
+  .side-main .block-title-wrap { margin-top:56px; }
+  .side-main .block-title-img { display:block; margin:0 auto 26px; max-height:50px; width:auto; }
+  .side-main .tag-cloud { justify-content:flex-start; }
+  .side-main > .post-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px 24px; }
+  .side-main > .post-list > .post-card:nth-child(n+7) { display:none; }
+  .side-main .more-btn { max-width:380px; margin:32px auto 0; }
+  .side-main .category-grid { grid-template-columns:repeat(3,1fr); gap:12px; padding-bottom:20px; }
+  .sd-sticky { top:76px; }
+}
