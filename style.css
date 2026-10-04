@@ -1813,3 +1813,10 @@ article.post .body p { margin-bottom:30px; }
   .side-col { align-self:stretch; }
   .sd-sticky { position:sticky; top:84px; }
 }
+@media (min-width:960px) {
+  .sd-toc { max-height:none; overflow:visible; }
+  #sd-toc.compact .sd-title { margin-bottom:10px; padding-bottom:6px; }
+  #sd-toc.compact .sd-toc li { font-size:11.5px; line-height:1.45; margin-bottom:3px; }
+  #sd-toc.compact { margin-bottom:12px; }
+  .sd-top { padding:8px 14px; }
+}

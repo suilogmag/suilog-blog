@@ -40,7 +40,7 @@
       if(!el.id){n++;el.id="sd-h"+n;}
       out+='<li class="'+(el.tagName==="H3"?"sub":"")+'"><a href="#'+el.id+'">'+esc(el.textContent.trim())+'</a></li>';
     });
-    if(out){ul.innerHTML=out;aside.querySelector("#sd-toc").hidden=false;}
+    if(out){ul.innerHTML=out;var tb=aside.querySelector("#sd-toc");tb.hidden=false;if(ul.children.length>12)tb.classList.add("compact");}
   }
 
   // popular + category counts from search index
