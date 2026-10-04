@@ -12,7 +12,16 @@
 
   fetch(indexUrl)
     .then(function (res) { return res.json(); })
-    .then(function (data) { posts = data; })
+    .then(function (data) {
+      posts = data;
+      var q = new URLSearchParams(location.search).get("q");
+      if (q) {
+        input.value = q;
+        input.dispatchEvent(new Event("input"));
+        var sb = document.getElementById("search-block");
+        if (sb) sb.scrollIntoView();
+      }
+    })
     .catch(function () {
       if (hint) hint.textContent = "検索データの読み込みに失敗しました。";
     });
