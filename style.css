@@ -1708,3 +1708,11 @@ article.post .body p { margin-bottom:30px; }
   body.home .block-title-wrap { margin-top:44px; }
   .category-grid { padding-bottom:40px; }
 }
+
+/* top page post counts: mobile 4 / PC 6 (new + popular) */
+.wn-main .post-list > .post-card:nth-child(n+5), .band-pop .post-list > .post-card:nth-child(n+5) { display:none; }
+@media (min-width:960px) {
+  .wn-main .post-list > .post-card:nth-child(n+5), .band-pop .post-list > .post-card:nth-child(n+5) { display:block; }
+  .wn-main .post-list > .post-card:nth-child(n+7), .band-pop .post-list > .post-card:nth-child(n+7) { display:none; }
+  .concept-block { padding-bottom:116px; }
+}
