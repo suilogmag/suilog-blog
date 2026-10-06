@@ -1879,3 +1879,9 @@ article.post .body p { margin-bottom:30px; }
 .page ul.pf-good > li::before { margin-left:-2px; margin-right:8px; }
 .page ul.pf-good + .pf-sns2 { margin-top:48px; }
 .page .hx p.hx-label, .page .hx p.hx-num { color:var(--accent-text) !important; }
+
+/* profile TOC: h3 sub items */
+.page .toc li ol { list-style:none; margin:4px 0 0; padding:0 0 0 20px; counter-reset:sub; }
+.page .toc li li { counter-increment:sub; font-size:12px; line-height:1.8; margin:0 0 2px; padding:0; }
+.page .toc li li::before { content:counter(sec) "-" counter(sub) "\00a0\00a0|\00a0\00a0"; color:#888; font-weight:400; position:static; width:auto; height:auto; background:none; border-radius:0; }
+.page .toc li li a { color:#777 !important; }
