@@ -1885,3 +1885,4 @@ article.post .body p { margin-bottom:30px; }
 .page .toc li li { counter-increment:sub; font-size:12px; line-height:1.8; margin:0 0 2px; padding:0; }
 .page .toc li li::before { content:counter(sec) "-" counter(sub) "\00a0\00a0|\00a0\00a0"; color:#888; font-weight:400; position:static; width:auto; height:auto; background:none; border-radius:0; }
 .page .toc li li a { color:#777 !important; }
+.pf-illust .pf-illust-img.pf-illust-img4 { background-image:url(assets/more-illust.webp); width:74%; height:94%; }
