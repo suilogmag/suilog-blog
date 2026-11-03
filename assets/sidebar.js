@@ -2,9 +2,9 @@
 (function(){
   var main=document.querySelector("main[data-side]");if(!main)return;
   var wrap=main.querySelector(".wrap");if(!wrap)return;
-  var pre=/\/(posts|category|tag|archive)\//.test(location.pathname)?"../":"";
+  var pre=/\/(posts|category|tag|archive|items)\//.test(location.pathname)?"../":"";
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
-  var cats=[["機能不全家族","dysfunctional-family"],["夜職と昼職","night-and-day-jobs"],["人間関係","relationships"],["妊活・不妊治療","fertility-treatment"],["妊娠・出産","pregnancy-birth"],["ステップファミリー","stepfamily"],["子育て","parenting"],["健康管理","health"],["家計管理","household-budget"],["日常vlog","daily-vlog"],["そのほか","others"]];
+  var cats=[["機能不全家族","dysfunctional-family"],["夜職と昼職","night-and-day-jobs"],["人間関係","relationships"],["妊活・不妊治療","fertility-treatment"],["妊娠・出産","pregnancy-birth"],["ステップファミリー","stepfamily"],["子育て","parenting"],["健康管理","health"],["家計管理","household-budget"],["日常vlog","daily-vlog"],["そのほか","others"],["アイテム","items"]];
   var tags=[["毒親サバイバー","toxic-parents-survivor"],["DV","dv"],["夜職","night-work"],["キャバ嬢","hostess"],["フレネミー","frenemy"],["借金","debt"],["不妊治療","infertility-treatment"],["体外受精","ivf"],["子宮外妊娠","ectopic-pregnancy"],["採卵","egg-retrieval"],["ステップファミリー","stepfamily"],["未婚シングル","single-mother"],["養育費","child-support"]];
   var sns=[["fa-brands fa-x-twitter","X","https://x.com/suilog_mag"],["fa-brands fa-instagram","Instagram","https://www.instagram.com/suilog_mag/"],["fa-brands fa-tiktok","TikTok","https://www.tiktok.com/@suilog_mag"],["ico ico-room","ROOM","https://room.rakuten.co.jp/suilog_mag/"],["ico ico-line","公式LINE","https://lin.ee/9OKmAWb"],["fa-brands fa-pinterest-p","Pinterest","https://pin.it/4FHcxBgEQ"],["fa-brands fa-youtube","YouTube","https://youtube.com/@suilog_mag"],["fa-brands fa-amazon","Amazon","https://www.amazon.co.jp/hz/wishlist/ls/6S7SB8APK0S5?ref_=wl_share"],["fa-regular fa-envelope","お問い合わせ",pre+"contact.html"]];
 
@@ -24,7 +24,7 @@
   h+='<div class="sd-box" id="sd-pop"><p class="sd-title">人気記事</p><div class="sd-pop"></div></div>';
   h+='<div class="sd-box"><p class="sd-title">キーワード</p><div class="sd-tags">'+tags.map(function(t){return '<a href="'+pre+'tag/'+t[1]+'.html">'+esc(t[0])+'</a>';}).join("")+'</div></div>';
   h+='<div class="sd-box"><p class="sd-title">アーカイブ</p><select class="sd-arch" aria-label="月を選択"><option value="">月を選択</option><option value="'+pre+'archive/2026-05.html">2026年5月</option></select></div>';
-  h+='<div class="sd-box" id="sd-cat"><p class="sd-title">カテゴリー</p><ul class="sd-cats">'+cats.map(function(c){return '<li><a href="'+pre+'category/'+c[1]+'.html"><i class="fa-solid fa-folder"></i>'+esc(c[0])+' <span data-cat="'+esc(c[0])+'"></span></a></li>';}).join("")+'</ul></div>';
+  h+='<div class="sd-box" id="sd-cat"><p class="sd-title">カテゴリー</p><ul class="sd-cats">'+cats.map(function(c){return '<li><a href="'+pre+'category/'+c[1]+'.html"><i class="fa-solid fa-folder"></i>'+esc(c[0])+(c[1]==="items"?'':' <span data-cat="'+esc(c[0])+'"></span>')+'</a></li>';}).join("")+'</ul></div>';
   h+='<div class="sd-sticky">'+searchHtml+'<div class="sd-box" id="sd-toc" hidden><p class="sd-title">目次</p><ul class="sd-toc"></ul></div><a class="sd-top" href="#" id="sd-top"><i class="fa-solid fa-house"></i>トップへ戻る<i class="fa-solid fa-arrow-right-long"></i></a></div>';
   aside.innerHTML=h;
 

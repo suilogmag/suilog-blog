@@ -1886,3 +1886,46 @@ article.post .body p { margin-bottom:30px; }
 .page .toc li li::before { content:counter(sec) "-" counter(sub) "\00a0\00a0|\00a0\00a0"; color:#888; font-weight:400; position:static; width:auto; height:auto; background:none; border-radius:0; }
 .page .toc li li a { color:#777 !important; }
 .pf-illust .pf-illust-img.pf-illust-img4 { background-image:url(assets/more-illust.webp); width:74%; height:94%; }
+
+/* ==========================================================
+   アイテム（商品紹介）ページ
+   ========================================================== */
+.it-pr { font-size:12px; color:var(--sub); margin:0 0 6px; line-height:1.6; }
+.it-pr i { color:var(--accent-text); margin-right:4px; }
+.it-sample { font-size:12px; color:var(--accent-text); background:var(--accent-soft); border-radius:8px; padding:6px 10px; margin:0 0 18px; line-height:1.6; }
+.ph { width:100%; height:100%; display:flex; align-items:center; justify-content:center; }
+.ph span { font-size:12px; letter-spacing:.2em; color:rgba(58,42,40,.35); font-weight:700; }
+.it-crumb { font-size:12px; color:var(--sub); margin:0 0 10px; }
+.it-crumb a { color:var(--link); }
+.it-photo { aspect-ratio:1 / 1; border-radius:14px; overflow:hidden; border:1px solid var(--line); }
+.it-thumbs { display:flex; gap:8px; margin:10px 0 18px; }
+.ph-s { width:64px; aspect-ratio:1 / 1; border-radius:10px; opacity:.55; border:2px solid transparent; }
+.ph-s.on { opacity:1; border-color:var(--accent); }
+.it-brand { display:inline-block; font-size:12px; color:var(--accent-text); background:var(--accent-soft); border-radius:999px; padding:2px 12px; margin:0 0 6px; }
+.it-title { font-size:21px; line-height:1.5; margin:4px 0 10px; font-weight:700; }
+.it-tags { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 6px; }
+.it-tags span { font-size:12px; color:var(--sub); background:#f7f3f2; border-radius:999px; padding:2px 11px; }
+.it-h { font-size:15px; font-weight:700; margin:28px 0 12px; padding-left:10px; border-left:3px solid var(--accent); line-height:1.4; }
+.it-buy { display:flex; flex-direction:column; gap:10px; }
+.it-buy a { position:relative; display:flex; align-items:center; justify-content:center; padding:14px 40px; border:1px solid #d9cfcc; border-radius:999px; font-size:14px; font-weight:700; background:#fff; }
+.it-buy a.primary { background:var(--accent); border-color:var(--accent); color:var(--accent-ink); }
+.it-buy a i { position:absolute; right:18px; top:50%; transform:translateY(-50%); font-size:13px; opacity:.7; }
+.it-buy a:hover { opacity:.85; }
+.it-facts { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
+.it-fact { border:1px solid var(--line); border-radius:12px; padding:12px; display:flex; flex-direction:column; gap:2px; }
+.it-fact i { font-size:20px; color:var(--accent-text); margin-bottom:4px; }
+.it-fact small { font-size:11px; color:var(--sub); }
+.it-fact b { font-size:14px; line-height:1.5; }
+.it-note { background:var(--accent-soft); border-radius:14px; padding:14px 16px; margin:22px 0 0; }
+.it-note h3 { font-size:13px; margin:0 0 4px; color:var(--accent-text); }
+.it-note p { margin:0; font-size:14px; line-height:1.9; }
+.it-spec { width:100%; border-collapse:separate; border-spacing:0; border:1px solid var(--line); border-radius:12px; overflow:hidden; font-size:13px; }
+.it-spec th, .it-spec td { padding:11px 14px; text-align:left; border-bottom:1px solid var(--line); line-height:1.6; vertical-align:top; }
+.it-spec tr:last-child th, .it-spec tr:last-child td { border-bottom:0; }
+.it-spec th { width:34%; color:var(--sub); font-weight:500; background:#fffafb; }
+.it-more { margin:12px 0 0; }
+.it-more summary { cursor:pointer; padding:12px 14px; border:1px solid var(--line); border-radius:12px; font-size:13px; font-weight:700; list-style:none; }
+.it-more summary::-webkit-details-marker { display:none; }
+.it-more[open] summary { border-bottom-left-radius:0; border-bottom-right-radius:0; }
+.it-more[open] .it-spec { border-top:0; border-top-left-radius:0; border-top-right-radius:0; }
+.it-small { font-size:11px; color:var(--sub); margin:12px 0 0; line-height:1.7; }
